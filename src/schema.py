@@ -8,6 +8,9 @@ class User(BaseModel):
     birthday: date
     nationality: str
     interests: list[str] | None
+    is_founder: bool
+    is_influencer: bool
+    is_service: bool
 
 class Favorites(BaseModel):
     food: str
